@@ -1,0 +1,47 @@
+.btn{
+	display: inline-block;
+	text-decoration: none;
+	padding: 7px 18px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	border-radius: 5px;
+	font-size: 16px;
+	border: 0;
+}
+
+.btn-primary{
+	background-color: $primary;
+	color: #fff;
+
+	&:disabled{
+		background-color: #eccc9a;
+		cursor: not-allowed;
+	}
+}
+
+
+.wpcf7-submit{
+	@extend .btn;
+	background-color: $primary;
+	color: #fff;
+	min-width: 160px;
+	border: 0;
+}
+
+.woocommerce{
+	button.button,
+	a.button{
+		@extend .btn;
+
+		&.alt{
+			@extend .btn-primary;
+		}
+	}
+}
+
+.btnTransparent{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	background-color: transparent;
+}

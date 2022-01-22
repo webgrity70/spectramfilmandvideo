@@ -22,6 +22,5 @@ node_modules/
 
 # ignore log files and databases
 *.log
-*.sql
 *.sqlite
 *.mov

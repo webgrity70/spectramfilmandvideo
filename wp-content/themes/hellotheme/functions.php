@@ -222,6 +222,12 @@ function add_hero(){
 	echo get_template_part('template-parts/hero');
 }
 
+
+add_action('woocommerce_before_single_product','back_to_product');
+function back_to_product(){
+	echo 'somthing';
+}
+
 // add result count after header
 add_action('woocommerce_archive_description','woocommerce_result_count',11);
 
